@@ -1,0 +1,86 @@
+.container {
+  width: 20em;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 16px;
+  position: relative;
+
+  @media screen and (max-width:500px) {
+    width: 16em;
+  }
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 1em;padding-bottom: 1em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Dropdown menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 99.5%;
+  border: 1px solid #c7c7c7;
+  background-color: #f9fafb;
+  border-radius: 0.8em;
+  overflow: hidden;
+  margin-top: 0.5em;
+  left: 0px;
+}
+
+/* Menu item */
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+}
+
+.menuItem:not(:first-child)
+{
+  margin-top: 0.5em;
+}
+
+.menuItem:hover {
+  background: #f1f1f152;
+}
+
+.itemLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chevron {
+  color: #9ca3af;
+}
+
+.icon_svg
+{
+  width: 1em;
+  height: 1em;
+}
+
+.arrow_icon_svg
+{
+  width: 0.7em;
+  height: 0.7em;
+}

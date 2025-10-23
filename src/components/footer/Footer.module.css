@@ -1,0 +1,214 @@
+.footer
+{
+    padding-bottom: 10em;
+
+    @media screen and (max-width:900px)
+    {
+        padding-bottom: 5em;
+    }
+}
+
+
+.email_container
+{
+    background-color: #c8c8c836;
+    width: 95%;
+    padding: 2.5%;
+    border-radius: 1em;
+    display: flex;justify-content: space-between;align-items: center;
+
+    @media screen and (max-width:800px)
+    {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: 92%;
+        padding: 4%;
+    }
+}
+
+
+.email_container .form_container
+{
+    height: 10em;
+    width: 60%;
+    display: flex;flex-direction: column;
+
+    @media screen and (max-width:1200px) 
+    {
+        width: 65%;   
+    }
+
+    @media screen and (max-width:800px)
+    {
+        margin-top: 1.5em;
+        width: 98%;
+        height: fit-content;
+    }
+}
+
+
+.email_container .form_container .title
+{
+    font-size: 1.6em;
+    padding: 0em;
+    margin: 0px;
+
+    @media screen and (max-width:800px)
+    {
+        font-size: 1.3em;
+    }
+}
+
+.email_container .form_container .smalltext
+{
+    margin-top: 0.6em;
+}
+
+.email_container .form_container .smalltext span
+{
+    font-size: 1.1em;
+
+    @media screen and (max-width:1200px) 
+    {
+        font-size: 1em;  
+    }
+
+    @media screen and (max-width:800px)
+    {
+        font-size: 0.9em;
+    }
+}
+
+
+.email_container .form_container .input_container input,
+.email_container .form_container .input_container button
+{
+    font-size: 1.2em;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    background-color: white;
+
+    @media screen and (max-width:1200px) 
+    {
+        font-size: 1em;    
+    }
+}
+
+.email_container .form_container .input_container
+{
+    margin-top: 1.5em;
+
+    @media screen and (max-width:800px)
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.email_container .form_container .input_container input
+{
+    border: 1px solid white;
+
+    @media screen and (max-width:800px)
+    {
+        width: 85%;
+    }
+}
+
+.email_container .form_container .input_container button
+{
+    border: 1px solid #9D9D9D;
+    margin-left: 0.4em;
+
+    @media screen and (max-width:800px)
+    {
+        margin-top: 0.5em;
+        width: fit-content;
+        margin-left: 0px;
+    }
+}
+
+.email_container .icon_container
+{
+    height: 10em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #c8c8c836;
+
+    @media screen and (max-width:800px)
+    {
+        width: 6em;
+        height: 6em;
+    }
+}
+
+.email_container .icon_container .icon_svg
+{
+    width: 1.6em;
+    height: 1.6em;
+}
+
+
+.contact_container
+{
+    margin-top: 5em;
+
+    @media screen and (max-width:900px)
+    {
+        margin-top: 3em;
+    }
+}
+
+
+.contact_container .title_container span
+{
+    font-size: 1.4em;
+
+    @media screen and (max-width:800px)
+    {
+        font-size: 1.2em;
+    }
+}
+
+
+.contact_container ul
+{
+    list-style: none;
+    padding: 0em;
+    display: flex;
+}
+
+.contact_container ul li:not(:first-child)
+{
+    margin-left: 2em;
+}
+
+.contact_container ul li a
+{
+    display: flex;
+}
+
+.contact_container ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.contact_container ul li a .icon_svg
+{
+    width: 1em;
+    height: 1em;
+    margin-left: 0.5em;
+}
+
+.contact_container ul li a span
+{
+    text-decoration: underline;
+}
