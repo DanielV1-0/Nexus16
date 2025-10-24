@@ -7,7 +7,7 @@ export function PostCard({slug, image, date, readtime, title}:{slug:string, imag
   return (
     
     <div className={style.post_card}>
-    <Link href={`/post/${slug}`} className={style.post_card_link}>
+    <Link href={`/posts/${slug}`} className={style.post_card_link}>
         <div className={style.img_container}><img src={image} alt="img" /></div>
         <div className={style.text_container}>
             <div className={style.date_container}><span>{date} • {readtime}</span></div>

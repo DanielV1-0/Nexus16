@@ -15,9 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel V1",
+  title: "Achraf",
   description: "Adept at designing and building robust, scalable systems that balance efficiency with elegance.",
-  keywords:['software engineer','system designer','system design','cloud architecture','backend development','AI','software architecture','scalable systems','portfolio','tech blog','engineering projects',]
+  keywords:['software engineer','system designer','system design','cloud architecture','backend development','AI','software architecture','scalable systems','portfolio','tech blog','engineering projects',],
+  
 };
 
 export default function RootLayout({

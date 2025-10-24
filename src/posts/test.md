@@ -6,7 +6,7 @@ createdat: "2025-10-19"
 author: "John Doe"
 image: "/Astronaut%20walks.jpg"
 readTime: "12 Min read"
-category: "System design"
+category: "System Design"
 description: "Hello ==============================="
 tags: "Ai, shit"
 ---

@@ -24,13 +24,13 @@ function Navbar()
 
   return (
     <nav className={style.nav_contanier}>
-        <h2 className={style.title}>Daniel V1</h2>
+        <h2 className={style.title}>Achraf V1</h2>
 
         <div className={`${HideSidebar==true ? style.hiden_links : style.show_links} ${style.links_list_container}`}>
             <div className={style.links_list_closer} onClick={()=>HandleHideSideBar()}></div>
             <ul className={`${IsAnimatingHiden==true ? style.animate_hide_links : style.animate_show_links} ${style.links_list}`}>
                 <li><Link href="/"><span>About</span></Link></li>
-                <li><Link href={"/posts?category=All&page=0"}><span>Posts</span></Link></li>
+                <li><Link href={"/posts"}><span>Posts</span></Link></li>
                 <li><Link href={"#contact"}><span>Contact</span></Link></li>
             </ul>
         </div>

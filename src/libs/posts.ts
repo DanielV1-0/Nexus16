@@ -134,38 +134,3 @@ export function getAllPosts(): PostItemFilter[] {
       new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 }
-
-
-export function getPostsByCategory(category: string, page:number): {posts: PostItem[],isThereNext: boolean}
-{
-  
-  const allPosts = getAllPosts();
-  
-  if(category == "All" || category == undefined)
-  {
-    const sliced = allPosts.slice(page*5, (page*5)+5);
-    const isThereNext = (page*5)+1 < allPosts.length;
-
-    return {
-      posts: sliced,
-      isThereNext
-    };
-  }
-
-  // 1️⃣ Filter by category (case-insensitive)
-  const filtered = allPosts.filter(
-    (post) => post.category?.toLowerCase() === category.toLowerCase()
-  );
-
-  // 2️⃣ Paginate or slice by range
-  const sliced = filtered.slice(page*5, (page*5)+5);
-
-  // 3️⃣ Determine if there's a next page
-  const isThereNext = (page*5)+1 < filtered.length;
-
-  // 4️⃣ Return everything neatly
-  return {
-    posts: sliced,
-    isThereNext
-  };
-}

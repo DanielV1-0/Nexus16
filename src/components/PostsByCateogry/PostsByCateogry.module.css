@@ -84,3 +84,48 @@
   width: 0.7em;
   height: 0.7em;
 }
+
+.posts
+{
+  min-height: 78dvh;
+  margin-top: 3em;
+}
+
+.filter_options_container
+{
+  
+}
+
+.posts_container
+{
+  margin-top: 2.5em;
+  min-height: 40dvh;
+
+  @media screen and (max-width:620px) 
+  {
+    margin-top: 2em;
+    margin-left: 0.3em;  
+  }
+}
+
+.navigation_btns_container
+{
+  display: flex;
+}
+
+.navigation_container
+{
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 0.4em;
+  background-color: rgba(216, 216, 216, 0.4);
+  display: flex;justify-content: center;align-items: center;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.navigation_container .icon_svg
+{
+  width: 1em;
+  height: 1em;
+  color: rgba(146, 146, 146, 0.9);
+}
