@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: '/',      // ensure relative assets
+  trailingSlash:true
 };
 
 export default nextConfig;
