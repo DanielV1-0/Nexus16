@@ -12,7 +12,7 @@ export default function Home() {
       
       <section className={style.about_container}>
         <h1>Software Engineer & System Designer</h1>
-        <span>Adept at designing and building robust, scalable systems that balance efficiency with elegance.</span>
+        <span>Crafting scalable, efficient systems that transform how businesses work — from legacy to advanced solutions.</span>
       </section>
 
 
